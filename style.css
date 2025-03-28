@@ -10,6 +10,48 @@ a {
   color: inherit;
 }
 
+/* SUPER TOPBAR */
+.super-topbar {
+  background: #fff;
+  border-bottom: 1px solid #ddd;
+  padding: 8px 30px;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  font-size: 14px;
+  align-items: center;
+}
+
+.super-left span {
+  margin-right: 20px;
+  font-weight: 500;
+  color: #111;
+}
+
+.super-right {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  flex-wrap: wrap;
+}
+
+.contact-icons a img {
+  margin: 0 3px;
+  transition: transform 0.2s;
+}
+
+.contact-icons a img:hover {
+  transform: scale(1.2);
+}
+
+.phones span {
+  margin-left: 10px;
+  color: #e60073;
+  font-weight: bold;
+  font-style: italic;
+}
+
+/* TOPBAR din header */
 .topbar {
   display: flex;
   justify-content: space-between;
@@ -26,6 +68,7 @@ a {
   color: #007bff;
 }
 
+/* NAVBAR PRINCIPAL */
 .main-nav {
   background: #222;
   padding: 10px 30px;
@@ -51,6 +94,7 @@ a {
   color: #ffd700;
 }
 
+/* HEADER HERO */
 .hero-section {
   display: flex;
   justify-content: space-between;
@@ -82,6 +126,11 @@ a {
   border-radius: 6px;
   font-weight: bold;
   display: inline-block;
+  transition: background 0.3s;
+}
+
+.btn-primary:hover {
+  background: #e6005c;
 }
 
 .hero-image {
@@ -96,16 +145,19 @@ a {
   border-radius: 10px;
 }
 
+/* RESPONSIVE */
 @media (max-width: 768px) {
+  .super-topbar,
   .topbar {
     flex-direction: column;
-    text-align: center;
-    gap: 10px;
+    align-items: flex-start;
+    gap: 8px;
+    text-align: left;
   }
 
   .main-nav ul {
     flex-direction: column;
-    gap: 15px;
+    gap: 10px;
   }
 
   .hero-section {
