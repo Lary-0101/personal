@@ -211,4 +211,31 @@ footer {
   .hero-image {
     margin-top: 30px;
   }
+  .top-info {
+  background-color: #f8f8f8;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 14px;
+  padding: 8px 20px;
+  display: flex;
+  gap: 20px;
+  justify-content: center; /* sau flex-start, dacă vrei la stânga */
+  align-items: center;
+}
+
+.top-info span {
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+}
+
+.top-info i {
+  color: #ff0055; /* culoarea iconițelor, adaptează după nevoi */
+}
+
+/* Linia subțire neagră sub navbar */
+.navbar {
+  border-bottom: 1px solid #000; /* linia sub navbar */
+  padding-bottom: 10px; /* padding sub navbar */
+}
+
 }
