@@ -1,119 +1,214 @@
 body {
   margin: 0;
   font-family: 'Montserrat', sans-serif;
-  background: #fff;
+  background-color: #fff;
   color: #111;
+  scroll-behavior: smooth;
 }
 
-.topbar-clean {
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.navbar {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 10px 30px;
-  background: #fff;
-  border-bottom: 1px solid #eee;
-  font-size: 14px;
-  font-weight: 500;
-  color: #222;
-  position: sticky;
+  padding: 20px 40px;
+  position: absolute;
   top: 0;
-  z-index: 999;
+  width: 100%;
+  z-index: 1000;
 }
 
-.logo-title {
+.navbar .logo {
+  font-weight: bold;
   font-size: 20px;
-  font-weight: 700;
-  color: #000;
+  color: #fff;
 }
 
-.topbar-right span {
-  margin-left: 20px;
+.navbar ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
 }
 
-@media (max-width: 768px) {
-  .topbar-clean {
-    flex-direction: column;
-    text-align: center;
-    gap: 6px;
-  }
+.navbar a {
+  color: #fff;
+  font-weight: 500;
+  transition: color 0.3s;
+}
 
-  .topbar-right span {
-    margin-left: 0;
-    display: block;
-  }
-  .hero {
+.navbar a:hover {
+  color: #ffd700;
+}
+
+.hero {
+  background: none;
+  height: 100vh;
   display: flex;
   align-items: center;
-  justify-content: space-between;
-  padding: 60px 10%;
+  justify-content: center;
+  padding: 0 40px;
   flex-wrap: wrap;
-  background: #fff;
+}
+
+.hero::after {
+  background: none;
+}
+
+.hero-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  width: 100%;
+  max-width: 1200px;
 }
 
 .hero-text {
   flex: 1;
-  min-width: 300px;
+  color: #111;
+  padding: 20px;
+  max-width: 600px;
 }
 
 .hero-text h1 {
   font-size: 48px;
-  font-weight: 800;
-  margin-bottom: 20px;
-  color: #000;
-}
-
-.hero-text h1 span {
-  font-style: italic;
-  display: block;
+  margin-bottom: 10px;
 }
 
 .hero-text p {
-  font-size: 18px;
-  margin-bottom: 30px;
-  line-height: 1.5;
-  color: #444;
-}
-
-.btn-dark {
-  background: #000;
-  color: #fff;
-  padding: 14px 28px;
-  font-size: 16px;
-  border-radius: 8px;
-  font-weight: bold;
-  transition: 0.3s ease;
-  display: inline-block;
-}
-
-.btn-dark:hover {
-  background: #fff;
-  color: #000;
-  border: 2px solid #000;
+  font-size: 20px;
+  margin-bottom: 20px;
 }
 
 .hero-image {
   flex: 1;
-  min-width: 300px;
-  text-align: right;
+  display: flex;
+  justify-content: center;
 }
 
 .hero-image img {
   max-width: 100%;
   height: auto;
-  border-radius: 12px;
+  border-radius: 20px;
+}
+
+.btn {
+  background: #ff3377;
+  color: white;
+  padding: 12px 24px;
+  border-radius: 6px;
+  font-weight: bold;
+  display: inline-block;
+  transition: background 0.3s;
+}
+
+.btn:hover {
+  background: #e6005c;
+}
+
+section {
+  padding: 80px 20px;
+  max-width: 900px;
+  margin: auto;
+  text-align: center;
+}
+
+h2 {
+  font-size: 32px;
+  margin-bottom: 30px;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+ul li {
+  margin: 12px 0;
+  font-size: 18px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  justify-content: center;
+}
+
+.price {
+  font-size: 36px;
+  font-weight: bold;
+  color: #28a745;
+  display: inline-block;
+  margin-right: 10px;
+}
+
+.contact-card {
+  background: #f2f2f2;
+  padding: 20px;
+  margin-bottom: 30px;
+  border-radius: 8px;
+}
+
+.contact-card .icons img {
+  width: 30px;
+  margin: 8px;
+  transition: transform 0.3s ease;
+}
+
+.contact-card .icons img:hover {
+  transform: scale(1.2);
+}
+
+footer {
+  background: #111;
+  color: white;
+  text-align: center;
+  padding: 20px;
+  font-size: 14px;
+}
+
+.fade-section {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: all 0.8s ease-out;
+}
+
+.show {
+  opacity: 1;
+  transform: translateY(0);
 }
 
 @media (max-width: 768px) {
-  .hero {
+  .navbar {
     flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .navbar ul {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .hero-text h1 {
+    font-size: 32px;
+  }
+
+  .hero-text p {
+    font-size: 16px;
+  }
+
+  .btn {
+    width: 100%;
     text-align: center;
-    padding: 40px 20px;
+  }
+
+  .hero-content {
+    flex-direction: column;
   }
 
   .hero-image {
-    text-align: center;
     margin-top: 30px;
   }
-}
-
 }
