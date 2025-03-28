@@ -2,34 +2,85 @@
 <html lang="ro">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Evacuator Prime</title>
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap" rel="stylesheet">
 </head>
 <body>
 
-  <div class="topbar-clean">
-    <div class="topbar-left">
-      <span class="logo-title">Evacuator Prime</span>
+<header class="hero">
+  <nav class="navbar">
+    <div class="logo">Evacuator Prime</div>
+    <ul class="nav-links">
+      <li><a href="#home" data-ro="Acasă" data-ru="Главная">Acasă</a></li>
+      <li><a href="#prices" data-ro="Prețuri" data-ru="Цены">Prețuri</a></li>
+      <li><a href="#services" data-ro="Servicii" data-ru="Услуги">Servicii</a></li>
+      <li><a href="#about" data-ro="Despre Noi" data-ru="О нас">Despre Noi</a></li>
+      <li><a href="#contact" data-ro="Contacte" data-ru="Контакты">Contacte</a></li>
+      <li class="lang-switch"><a onclick="setLang('ro')">RO</a> | <a onclick="setLang('ru')">RU</a></li>
+    </ul>
+  </nav>
+
+  <div class="hero-content">
+    <div class="hero-text">
+      <h1 data-ro="EVACUATOR DISPONIBIL 24/24" data-ru="ЭВАКУАТОР ДОСТУПЕН 24/24">EVACUATOR DISPONIBIL 24/24</h1>
+      <p data-ro="Tractăm în Moldova, România și Europa!" data-ru="Эвакуация по Молдове, Румынии и Европе!">Tractăm în Moldova, România și Europa!</p>
+      <a href="#contact" class="btn" data-ro="Contactează-ne" data-ru="Связаться с нами">Contactează-ne</a>
     </div>
-    <div class="topbar-right">
-      <span>🌍 Moldova • România • Europa</span>
-      <span>⏰ 24/7</span>
-      <span>📍 Oricând, oriunde</span>
+    <div class="hero-image">
+      <img src="hero-bg.jpg" alt="Evacuator" />
     </div>
   </div>
-<!-- HERO SECTION -->
-<section class="hero">
-  <div class="hero-text">
-    <h1><span>EVACUATOR</span> 24/7</h1>
-    <p>Cu o gamă largă de echipamente și vehicule specializate, suntem pregătiți să tractăm orice tip de vehicul, de la mașini la SUV-uri și camioane.</p>
-    <a href="#contact" class="btn-dark">Contactează-ne</a>
+</header>
+
+<section id="prices" class="fade-section">
+  <h2 data-ro="Prețuri" data-ru="Цены">Prețuri</h2>
+  <p><span class="price" data-value="400">0</span> lei - Tractare autoturisme în oraș</p>
+  <p><span class="price" data-value="500">0</span> lei+ - Tractare în afara orașului sau alte vehicule (camioane, dube)</p>
+</section>
+
+<section id="services" class="fade-section">
+  <h2 data-ro="Serviciile Noastre" data-ru="Наши услуги">Serviciile Noastre</h2>
+  <ul>
+    <li><img src="https://img.icons8.com/ios-filled/24/000000/tow-truck.png"/> Tractări auto</li>
+    <li><img src="https://img.icons8.com/ios-filled/24/000000/in-transit.png"/> Transport intern și internațional</li>
+    <li><img src="https://img.icons8.com/ios-filled/24/000000/road.png"/> Asistență rutieră</li>
+  </ul>
+</section>
+
+<section id="about" class="fade-section">
+  <h2 data-ro="Despre Noi" data-ru="О нас">Despre Noi</h2>
+  <p data-ro="Suntem disponibili 24/7, cu flotă modernă, șoferi profesioniști și timp de reacție rapid." 
+     data-ru="Мы работаем 24/7, современный автопарк, профессиональные водители и быстрая реакция.">
+     Suntem disponibili 24/7, cu flotă modernă, șoferi profesioniști și timp de reacție rapid.
+  </p>
+</section>
+
+<section id="contact" class="fade-section">
+  <h2 data-ro="Contacte" data-ru="Контакты">Contacte</h2>
+  <div class="contact-card">
+    <strong>Vergil</strong> - 0 (60) 506338  
+    <div class="icons">
+      <a href="viber://chat?number=%2B37360506338"><img src="https://img.icons8.com/color/48/000000/viber.png"/></a>
+      <a href="https://wa.me/37360506338"><img src="https://img.icons8.com/color/48/000000/whatsapp.png"/></a>
+      <a href="https://t.me/+37360506338"><img src="https://img.icons8.com/color/48/000000/telegram-app.png"/></a>
+    </div>
   </div>
-  <div class="hero-image">
-    <img src="hero-bg.jpg" alt="Evacuator">
+  <div class="contact-card">
+    <strong>Cristi</strong> - 0 (79) 942243  
+    <div class="icons">
+      <a href="viber://chat?number=%2B37379942243"><img src="https://img.icons8.com/color/48/000000/viber.png"/></a>
+      <a href="https://wa.me/37379942243"><img src="https://img.icons8.com/color/48/000000/whatsapp.png"/></a>
+      <a href="https://t.me/+37379942243"><img src="https://img.icons8.com/color/48/000000/telegram-app.png"/></a>
+    </div>
   </div>
 </section>
 
+<footer>
+  &copy; 2025 Evacuator Prime
+</footer>
+
+<script src="script.js"></script>
 </body>
 </html>
