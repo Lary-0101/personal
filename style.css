@@ -20,6 +20,8 @@ a {
   top: 0;
   width: 100%;
   z-index: 1000;
+  border-bottom: 1px solid #000; /* linia sub navbar */
+  padding-bottom: 10px; /* padding sub navbar */
 }
 
 .navbar .logo {
@@ -211,7 +213,9 @@ footer {
   .hero-image {
     margin-top: 30px;
   }
-  .top-info {
+}
+
+.top-info {
   background-color: #f8f8f8;
   font-family: 'Montserrat', sans-serif;
   font-size: 14px;
@@ -230,12 +234,4 @@ footer {
 
 .top-info i {
   color: #ff0055; /* culoarea iconițelor, adaptează după nevoi */
-}
-
-/* Linia subțire neagră sub navbar */
-.navbar {
-  border-bottom: 1px solid #000; /* linia sub navbar */
-  padding-bottom: 10px; /* padding sub navbar */
-}
-
 }
