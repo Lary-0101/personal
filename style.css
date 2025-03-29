@@ -1,8 +1,9 @@
 body {
-  margin: 0;
+  background: linear-gradient(to bottom, #e0e7ff, #f3e8ff);
   font-family: 'Inter', sans-serif;
-  background-color: #f8f9fa;
+  margin: 0;
 }
+
 
 header {
   display: flex;
