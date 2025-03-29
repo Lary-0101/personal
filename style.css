@@ -2,8 +2,8 @@
 body {
   margin: 0;
   font-family: 'Inter', sans-serif;
-  background: linear-gradient(135deg, #2e3aa1, #e2ecf9);
-  color: #fff;
+  background: #f5f5f5;
+  color: #2c2c2c;
 }
 
 /* Header */
@@ -12,7 +12,8 @@ header {
   align-items: center;
   justify-content: space-between;
   padding: 60px 20px;
-  background: linear-gradient(135deg, #2e3aa1, #a3b7e6);
+  background: linear-gradient(135deg, #2c2c2c, #4e4e4e);
+  color: white;
   flex-wrap: wrap;
 }
 
@@ -23,16 +24,18 @@ header {
 .header-text h1 {
   font-size: 3em;
   margin-bottom: 0.2em;
+  color: #fff;
 }
 
 .header-text p {
   font-size: 1.2em;
   margin-bottom: 1em;
+  color: #ddd;
 }
 
 .contact-button {
-  background-color: #fff;
-  color: #2e3aa1;
+  background-color: #d4af37;
+  color: #fff;
   padding: 12px 24px;
   border-radius: 30px;
   text-decoration: none;
@@ -41,33 +44,49 @@ header {
 }
 
 .contact-button:hover {
-  background-color: #e2ecf9;
+  background-color: #b99827;
+}
+
+/* Imagine header */
+.header-image img {
+  max-width: 400px;
+  border-radius: 10px;
 }
 
 /* Navigație */
 nav {
-  background-color: #1a2273;
-  padding: 10px;
+  background-color: #2c2c2c;
+  padding: 12px 0;
   text-align: center;
 }
 
 nav a {
-  color: #fff;
+  color: #d4af37;
   text-decoration: none;
-  margin: 0 15px;
+  margin: 0 20px;
   font-weight: 600;
+  transition: 0.3s;
+}
+
+nav a:hover {
+  color: #fff;
 }
 
 /* Secțiuni */
 section {
   padding: 60px 20px;
-  background-color: rgba(255,255,255,0.05);
-  color: #fff;
+  background-color: #fff;
+  color: #2c2c2c;
+}
+
+section:nth-of-type(even) {
+  background-color: #f0f0f0;
 }
 
 section h2 {
   text-align: center;
   margin-bottom: 40px;
+  color: #2c2c2c;
 }
 
 /* Layout grid/carduri */
@@ -79,36 +98,63 @@ section h2 {
 }
 
 .service-card, .despre-card, .tarif-card, .contact-card {
-  background-color: rgba(255,255,255,0.1);
+  background-color: #ffffff;
+  color: #2c2c2c;
+  border: 1px solid #ddd;
   padding: 20px;
   border-radius: 10px;
   width: 280px;
   text-align: center;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+  transition: 0.3s;
+}
+
+.service-card:hover,
+.despre-card:hover,
+.tarif-card:hover,
+.contact-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 14px rgba(0,0,0,0.1);
+}
+
+.service-card i,
+.despre-card i,
+.tarif-card i,
+.contact-card i {
+  margin-bottom: 10px;
+  color: #d4af37;
 }
 
 .pret {
   font-size: 1.4em;
   font-weight: bold;
-  color: #ffe600;
+  color: #d4af37;
 }
 
 .tarife-info, .contact-location {
   text-align: center;
   margin-top: 20px;
   font-size: 1.1em;
+  color: #555;
 }
 
 /* Social icons */
 .social-icons a {
   margin: 0 8px;
-  color: #fff;
+  color: #2c2c2c;
   font-size: 1.4em;
+  transition: 0.3s;
+}
+
+.social-icons a:hover {
+  color: #d4af37;
 }
 
 /* Footer */
 footer {
   text-align: center;
   padding: 20px;
-  background-color: #1a2273;
+  background-color: #2c2c2c;
+  color: #bbb;
   font-size: 0.9em;
 }
