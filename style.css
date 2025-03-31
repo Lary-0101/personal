@@ -66,10 +66,25 @@ header {
   background-color: #b99827;
 }
 
-/* Imagine header */
 .header-image img {
-  max-width: 400px;
-  border-radius: 10px;
+  width: 250px;
+  height: 250px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 6px solid white;
+  box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+  animation: levitare 3s ease-in-out infinite;
+}
+
+@keyframes levitare {
+  0%, 100% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}
+
 }
 
 /* Navigație */
