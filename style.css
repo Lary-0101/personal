@@ -309,11 +309,12 @@ footer {
 }
 @media screen and (max-width: 768px) {
   body {
+    background-image: url('fundal-mobil.jpg');
     background-attachment: scroll;
-    background-size: auto 600px;     /* înălțimea fixă, lățime automată */
-    background-repeat: repeat-y;
+    background-size: cover;
+    background-repeat: no-repeat;
     background-position: center top;
-    background-image: url('fundal-mobil.png');
+    background-color: black;
   }
 }
 
