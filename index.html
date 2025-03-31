@@ -10,16 +10,28 @@
 </head>
 <body>
 
-  <header>
-    <div class="header-text">
-      <h1>EvacuatorPrime</h1>
-      <p>Tractări Auto Non-Stop | Rapid și Sigur</p>
-      <a href="#contact" class="contact-button">Contactează-ne</a>
-    </div>
-    <div class="header-image">
-      <img src="hero-bg.jpg" alt="Evacuator Prime" style="max-width: 400px; border-radius: 10px;">
-    </div>
-  </header>
+<header>
+  <div class="header-text">
+    <h1>EvacuatorPrime</h1>
+    <p>Tractări Auto Non-Stop | Rapid și Sigur</p>
+    <a href="#contact" class="contact-button">Contactează-ne</a>
+  </div>
+  <div class="header-image">
+    <img src="hero-bg.webp" alt="Evacuator Prime" style="max-width: 400px; border-radius: 10px;">
+  </div>
+
+  <div class="header-animation">
+    <!-- SVG animat -->
+    <svg viewBox="0 0 800 200" preserveAspectRatio="none">
+      <rect width="100%" height="100%" fill="#f0f0f0" />
+      <path d="M0,150 Q200,130 400,150 T800,150" stroke="#999" stroke-width="2" fill="none" />
+      <image xlink:href="masina.svg" width="80" height="40">
+        <animateTransform attributeName="transform" type="translate" from="-100 110" to="800 110" dur="8s" repeatCount="indefinite" />
+      </image>
+    </svg>
+  </div>
+</header>
+
 
   <nav>
     <a href="#servicii">Servicii</a>
