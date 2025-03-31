@@ -309,9 +309,11 @@ footer {
 }
 @media screen and (max-width: 768px) {
   body {
-    background-attachment: scroll; /* 🔁 Nu mai folosește fixed */
-    background-size: contain;      /* 🔲 Imaginea e redimensionată frumos */
+    background-attachment: scroll;
+    background-size: auto 600px;     /* înălțimea fixă, lățime automată */
     background-repeat: repeat-y;
-    background-position: top center;
+    background-position: center top;
+    background-image: url('fundal-mobil.png');
   }
 }
+
