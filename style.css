@@ -308,15 +308,28 @@ footer {
   }
 }
 @media screen and (max-width: 768px) {
+  html, body {
+    height: 100%;
+  }
+
   body {
     background-image: url('fundal-mobil.jpg');
-    background-attachment: scroll;
-    background-size: cover;
     background-repeat: no-repeat;
-    background-position: center top;
+    background-size: cover;
+    background-position: top center;
+    background-attachment: scroll;
     background-color: black;
   }
+
+  section,
+  header,
+  footer,
+  nav,
+  .top-info-bar {
+    background: transparent !important;
+  }
 }
+
 @media screen and (max-width: 768px) {
   .top-info-bar {
     display: flex;
